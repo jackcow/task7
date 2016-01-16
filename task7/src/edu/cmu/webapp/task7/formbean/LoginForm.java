@@ -3,11 +3,12 @@ package edu.cmu.webapp.task7.formbean;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoginForm {
+public class LoginForm extends FormBean{
     private String userName;
     private String password;
     private String action;
 
+    @Override
     public List<String> getValidationErrors() {
         List<String> errors = new ArrayList<>();
 
